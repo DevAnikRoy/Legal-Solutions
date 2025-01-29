@@ -10,8 +10,21 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
         rel="stylesheet">
     <style>
-        .eb-garamond-font {
+        .garamond {
             font-family: "EB Garamond", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+    </style>
+    <!-- G Fonts Popins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        .poppins {
+            font-family: "Poppins", serif;
             font-optical-sizing: auto;
             font-style: normal;
         }
@@ -39,11 +52,11 @@
 
 
 
-<body class="eb-garamond-font">
+<body class="">
 
     <!-- header section -->
 
-    <header class="md:container md:mx-auto">
+    <header class="md:container md:mx-auto lg:px-14">
         <!-- navbar -->
         <nav>
             <div class="navbar bg-base-100">
@@ -69,16 +82,17 @@
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-[16px]">
-                        <li><a>Home</a></li>
-                        <li><a>Services<i class="fa-solid fa-chevron-right"></i></a></li>
-                        <li><a>Cases<i class="fa-solid fa-chevron-right"></i></a></li>
-                        <li><a>Blog<i class="fa-solid fa-chevron-right"></i></a></li>
-                        <li><a>Contact Us<i class="fa-solid fa-chevron-right"></i></a></li>
-                        
+                        <li><a class="poppins">Home</a></li>
+                        <li><a class="poppins">Services<i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a class="poppins">Cases<i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a class="poppins">Blog<i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a class="poppins">Contact Us<i class="fa-solid fa-chevron-right"></i></a></li>
+
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn text-white bg-[#B68C5A] text-[17px] hover:text-[#B68C5A] hover:bg-white">Free Consultation</a>
+                    <a class="poppins btn text-white bg-[#B68C5A] text-[17px] hover:text-[#B68C5A] hover:bg-white">Free
+                        Consultation</a>
                 </div>
             </div>
         </nav>
@@ -87,7 +101,87 @@
 
     <!-- Main section -->
 
-    <main>
+    <main class="md:container md:mx-auto lg:px-14">
+        <!-- The Legal Practice area  -->
+        <section class="mt-24 justify-center items-center text-center lg:gap-10">
+            <div class=" px-4 ">
+                <h1 class="garamond font-extrabold text-[2.5rem]  text-[#414040]">The Legal Practice Area
+                </h1>
+                <p class="poppins text-lg text-gray-500">There are many variations of passages of Lorem Ipsum available, but
+                    the majority have suffered alteration in some form, by injected humour.</p>
+            </div>
+            <div class="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 6 justify-center items-center ">
+                <!-- card-1 -->
+                <div class="justify-center items-center space-y-5 py-10 px-6 border-b-2 h-[400px] ">
+                    <div class="avatar">
+                        <img src="images/business.png" alt="">
+                    </div>
+                    <h3 class="text-2xl font-bold garamond">Business Law</h3>
+                    <p class="text-gray-500">Covers contracts, regulations, and disputes to ensure businesses operate legally and ethically.</p>
+                    <button class="btn-circle w-8 h-8 bg-[#B68C5A]"><i
+                        class="fa-solid fa-arrow-right text-white text-sm "></i></button>
+                 </div>
+                
+                <!-- card-2 -->
+                <div class="justify-center items-center space-y-5 py-10 px-6 border-b-2 border-x-2 h-[400px] ">
+                    <div class="avatar">
+                        <img src="images/criminal.png" alt="">
+                    </div>
+                    <h3 class="text-2xl font-bold garamond">Criminal Law</h3>
+                    <p class="text-gray-500">Defines crimes, punishments, and legal procedures to maintain justice and public safety.</p>
+                    <button class="btn-circle w-8 h-8 bg-[#B68C5A]"><i
+                        class="fa-solid fa-arrow-right text-white text-sm "></i></button>
+                 </div>
+                
+                <!-- card-3 -->
+                <div class="justify-center items-center space-y-5 py-10 px-6 border-b-2 h-[400px] ">
+                    <div class="avatar">
+                        <img src="images/child.png" alt="">
+                    </div>
+                    <h3 class="text-2xl font-bold garamond">Child Support</h3>
+                    <p class="text-gray-500">Ensures both parents contribute financially to their child’s well-being after separation..</p>
+                    <button class="btn-circle w-8 h-8 bg-[#B68C5A]"><i
+                        class="fa-solid fa-arrow-right text-white text-sm "></i></button>
+                 </div>
+                
+                <!-- card-4 -->
+                <div class="justify-center items-center space-y-5 py-10 px-6 h-[400px] ">
+                    <div class="avatar">
+                        <img src="images/education.png" alt="">
+                    </div>
+                    <h3 class="text-2xl font-bold garamond">Education Law </h3>
+                    <p class="text-gray-500">Protects student rights, regulates schools, and ensures equal access to quality education.</p>
+                    <button class="btn-circle w-8 h-8 bg-[#B68C5A]"><i
+                        class="fa-solid fa-arrow-right text-white text-sm "></i></button>
+                 </div>
+                
+                <!-- card-5 -->
+                <div class="justify-center items-center space-y-5 py-10 px-6 border-x-2 h-[400px] ">
+                    <div class="avatar">
+                        <img src="images/divorce.png" alt="">
+                    </div>
+                    <h3 class="text-2xl font-bold garamond">Divorce Law</h3>
+                    <p class="text-gray-500">Manages legal separation, property division, spousal support, and child custody matters.</p>
+                    <button class="btn-circle w-8 h-8 bg-[#B68C5A]"><i
+                        class="fa-solid fa-arrow-right text-white text-sm "></i></button>
+                 </div>
+                
+                <!-- card-6 -->
+                <div class="justify-center items-center space-y-5 py-10 px-6 h-[400px] ">
+                    <div class="avatar">
+                        <img src="images/tax.png" alt="">
+                    </div>
+                    <h3 class="text-2xl font-bold garamond">Tax Law</h3>
+                    <p class="text-gray-500">Governs taxation policies for individuals and businesses, ensuring compliance with legal obligations.</p>
+                    <button class="btn-circle w-8 h-8 bg-[#B68C5A]"><i
+                        class="fa-solid fa-arrow-right text-white text-sm "></i></button>
+                 </div>
+                
+                
+                
+            </div>
+
+        </section>
 
     </main>
 
